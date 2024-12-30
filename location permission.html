@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECENA Services - Location Permission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Allow DECENA to access your location.</p>
+        <button onclick="allowLocation()">Allow</button>
+        <button onclick="denyLocation()">Deny</button>
+    </div>
+    <script>
+        function allowLocation() {
+            alert("Location Access Allowed!");
+            window.location.href = "index.html";
+        }
+        function denyLocation() {
+            alert("Location Access Denied.");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

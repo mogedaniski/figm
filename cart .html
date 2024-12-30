@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/MOGE%20DANIEL/Documents/figma/cart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./Shopping Cart_files/car.css">
+<script src="./Shopping Cart_files/cart.js.download" defer=""></script></head>
+
+
+<body>
+    <div class="cart-container">
+        <h2>Your Items</h2>
+        <div class="checkout-button-container">
+                <a href="file:///C:/Users/MOGE%20DANIEL/Documents/figma/checkout.html" class="checkout-button">Proceed to Checkout</a>
+            </div><table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            
+            
+            <tbody id="cart-items">
+                <tr>
+                    <td>Jollof Rice</td>
+                    <td><input type="number" value="1" min="1" class="quantity" data-price="10"></td>
+                    <td>$10.00</td>
+                    <td class="item-total">$10.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Egusi Soup</td>
+                    <td><input type="number" value="2" min="1" class="quantity" data-price="12"></td>
+                    <td>$12.00</td>
+                    <td class="item-total">$24.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Suya</td>
+                    <td><input type="number" value="1" min="1" class="quantity" data-price="8"></td>
+                    <td>$8.00</td>
+                    <td class="item-total">$8.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Amala </td>
+                    <td><input type="number" value="1" min="1" class="quantity" data-price="11"></td>
+                    <td>$11.00</td>
+                    <td class="item-total">$11.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Eba</td>
+                    <td><input type="number" value="1" min="1" class="quantity" data-price="5"></td>
+                    <td>$5.00</td>
+                    <td class="item-total">$5.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Afang Soup</td>
+                    <td><input type="number" value="1" min="1" class="quantity" data-price="13"></td>
+                    <td>$13.00</td>
+                    <td class="item-total">$13.00</td>
+                    <td><button class="remove-btn">Remove</button></td>
+                </tr>
+            <div class="cart-item">
+            
+            
+            
+            
+        </div></tbody>
+        </table>
+    
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Subtotal: <span id="subtotal">$71.00</span></p>
+            <p>Tax (5%): <span id="tax">$3.55</span></p>
+            <p><strong>Total: <span id="total">$74.55</span></strong></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 DecenaEats. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        
+        function updateCartTotals() {
+            let subtotal = 0;
+            const taxRate = 0.05;
+    
+            document.querySelectorAll('#cart-items tr').forEach(row => {
+                const quantityInput = row.querySelector('.quantity');
+                const price = parseFloat(quantityInput.getAttribute('data-price'));
+                const quantity = parseInt(quantityInput.value);
+                const itemTotal = price * quantity;
+    
+                
+                row.querySelector('.item-total').textContent = `$${itemTotal.toFixed(2)}`;
+                subtotal += itemTotal;
+            });
+    
+            const tax = subtotal * taxRate;
+            const total = subtotal + tax;
+    
+            document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+        }
+    
+        function removeItem(event) {
+            const button = event.target;
+            const row = button.closest('tr');
+            row.remove();
+            updateCartTotals();
+        }
+    
+        document.querySelectorAll('.quantity').forEach(input => {
+            input.addEventListener('change', updateCartTotals);
+        });
+    
+        document.querySelectorAll('.remove-btn').forEach(button => {
+            button.addEventListener('click', removeItem);
+        });
+    
+    </script>
+    
+    
+    </body></html>

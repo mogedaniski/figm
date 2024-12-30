@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Deccena Eats</title>
+    <link rel="stylesheet" href="produc.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Deccena Eats</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="marketplace-dashboard">
+        <header class="top-bar">
+            <div class="user-info">
+                <p>User name</p>
+                <img src="user-icon.png" alt="User Icon" class="user-icon">
+            </div>
+        </header>
+
+        <div class="dashboard-options">
+            <div class="option">Wallet</div>
+            <div class="option">Promotional Savings</div>
+            <div class="option">Become a Vendor</div>
+        </div>
+
+        <div class="carousel">
+            <img src="banner.png" alt="Seasonal Banner" class="carousel-image">
+        </div>
+
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="images/download.jpeg" alt="Red Oil">
+                <p>Red oil</p>
+                <p class="price">£30</p>
+                
+                <button 
+        class="add-to-cart" 
+        data-name="Red oil" 
+        data-price="30" 
+        data-image="images/download.jpeg">
+        Add to cart
+    </button>
+            </div>
+            <div class="product-card">
+                <img src="images/garri.jpeg" alt="Garri">
+                <p>Garri</p>
+                <p class="price">£15</p>
+                
+                <button 
+        class="add-to-cart" 
+        data-name="Garri" 
+        data-price="15" 
+        data-image="images/garri.jpeg">
+        Add to cart
+    </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="expanded-products">
+        <h2>Explore More Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/jollof rice.jpeg" alt="Jollof Rice">
+                <h3>Jollof Rice</h3>
+                <p>A classic Nigerian dish made with rich, spicy tomato sauce.</p>
+                <p>&pound;75</p>
+              
+                <button 
+                class="add-to-cart" 
+                data-name="Jollof Rice" 
+                data-price="75" 
+                data-image="images/jollof-rice.jpg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/fried rice.jpeg" alt="Fried Rice">
+                <h3>Fried Rice</h3>
+                <p>Perfectly spiced and loaded with vegetables and protein.</p>
+                <p>&pound;75</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Fried Rice" 
+                data-price="75" 
+                data-image="images/fried rice.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/amala.jpeg" alt="Amala">
+                <h3>Amala</h3>
+                <p>Served with Gbegiri and Ewedu soup for a perfect blend.</p>
+                <p>&pound;55</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Amala" 
+                data-price="55" 
+                data-image="images/amala.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/egusi.jpeg" alt="Egusi Soup">
+                <h3>Egusi Soup</h3>
+                <p>Made with melon seeds and a rich blend of spices.</p>
+                <p>&pound;45</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Egusi Soup" 
+                data-price="45" 
+                data-image="images/egusi.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/pounded yam.jpeg" alt="Pounded Yam">
+                <h3>Pounded Yam</h3>
+                <p>A smooth and stretchy staple paired with various soups.</p>
+                <p>&pound;42</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Pounded Yam" 
+                data-price="42" 
+                data-image="images/pounded yam.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/suya.jpeg" alt="Suya">
+                <h3>Suya</h3>
+                <p>Grilled and spicy meat skewers, a Nigerian street food favorite.</p>
+                <p>&pound;10</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Suya" 
+                data-price="10" 
+                data-image="images/suya.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/moimoi.jpeg" alt="Moi Moi">
+                <h3>Moi Moi</h3>
+                <p>Steamed bean pudding enriched with spices and proteins.</p>
+                <p>&pound;25</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Moi Moi" 
+                data-price="50" 
+                data-image="images/moimoi.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/ogbono.jpeg" alt="Ogbono Soup">
+                <h3>Ogbono Soup</h3>
+                <p>A hearty soup made with ground ogbono seeds and assorted meats.</p>
+                <p>&pound;54</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Ogbono Soup" 
+                data-price="54" 
+                data-image="images/ogbono.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/pepper_soup.jpeg" alt="Pepper Soup">
+                <h3>Pepper Soup</h3>
+                <p>A spicy broth with your choice of fish or meat.</p>
+                <p>&pound;50</p>
+              
+                <button 
+                class="add-to-cart" 
+                data-name="Pepper Soup" 
+                data-price="50" 
+                data-image="images/pepper_soup.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/akara.jpeg" alt="Akara">
+                <h3>Akara</h3>
+                <p>Deep-fried bean cakes, a popular breakfast or snack option.</p>
+                <p>&pound;20</p>
+              
+                <button 
+                class="add-to-cart" 
+                data-name="Akara" 
+                data-price="20" 
+                data-image="images/akara.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/banga_soup.jpeg" alt="Banga Soup">
+                <h3>Banga Soup</h3>
+                <p>A flavorful soup made from palm nut extract.</p>
+                <p>&pound;50</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Banga Soup" 
+                data-price="50" 
+                data-image="images/banga_soup.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/ofada_rice.jpeg" alt="Ofada Rice">
+                <h3>Ofada Rice</h3>
+                <p>Local rice served with spicy Ofada sauce.</p>
+                <p>&pound;55</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Ofada Rice" 
+                data-price="55" 
+                data-image="images/ofada_rice.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/isi_ewu.jpeg" alt="Isi Ewu">
+                <h3>Isi Ewu</h3>
+                <p>Spicy goat head delicacy cooked with traditional spices.</p>
+                <p>&pound;50</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Isi Ewu" 
+                data-price="50" 
+                data-image="images/isi_ewu.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/abacha.jpeg" alt="Abacha">
+                <h3>Abacha (African Salad)</h3>
+                <p>A delicious mix of cassava, garden eggs, and spices.</p>
+                <p>&pound;40</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Abacha (African Salad)" 
+                data-price="40" 
+                data-image="images/abacha.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/nkwobi.jpeg" alt="Nkwobi">
+                <h3>Nkwobi</h3>
+                <p>A spicy delicacy of cow foot served in a traditional clay pot.</p>
+                <p>&pound;38</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Nkwobi" 
+                data-price="38" 
+                data-image="images/nkwobi.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/ukodo.jpeg" alt="Ukodo">
+                <h3>Ukodo (Yam Pepper Soup)</h3>
+                <p>A yam and goat meat pepper soup, perfect for cold days.</p>
+                <p>&pound;50</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Ukodo (Yam Pepper Soup)" 
+                data-price="50" 
+                data-image="images/ukodo.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/ekpang.jpeg" alt="Ekpang Nkukwo">
+                <h3>Ekpang Nkukwo</h3>
+                <p>Delicious grated cocoyam dish wrapped in leafy greens.</p>
+                <p>&pound;50</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Ekpang Nkukwo" 
+                data-price="50" 
+                data-image="images/ekpang.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/afang_soup.jpeg" alt="Afang Soup">
+                <h3>Afang Soup</h3>
+                <p>Nutritious vegetable soup made with Afang leaves and proteins.</p>
+                <p>&pound;57</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Afang Soup" 
+                data-price="57" 
+                data-image="images/afang_soup.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/eba.jpeg" alt="Eba">
+                <h3>Eba</h3>
+                <p>A staple made from garri and paired with Nigerian soups.</p>
+                <p>&pound;45</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Eba" 
+                data-price="45" 
+                data-image="images/eba.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/tuwo_shinkahfa.jpeg" alt="Tuwo Shinkafa">
+                <h3>Tuwo Shinkafa</h3>
+                <p>A rice flour dish often paired with northern Nigerian soups.</p>
+                <p>&pound;50</p>
+              
+                <button 
+                class="add-to-cart" 
+                data-name="Tuwo Shinkafa" 
+                data-price="50" 
+                data-image="images/tuwo_shinkahfa.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/edikikong.jpeg" alt="Edikaikong Soup">
+                <h3>Edikaikong Soup</h3>
+                <p>A rich vegetable soup made with pumpkin and water leaves.</p>
+                <p>&pound;58</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Edikaikong Soup" 
+                data-price="58" 
+                data-image="images/edikikong.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/Unu_Ofio.jpeg" alt="Unu Ofio (Roasted Yam)">
+                <h3>Unu Ofio (Roasted Yam)</h3>
+                <p>Served with palm oil sauce for a traditional experience.</p>
+                <p>&pound;50</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Unu_Ofio" 
+                data-price="50" 
+                data-image="images/Unu_Ofio.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/beans_porage.jpeg" alt="Beans Porridge">
+                <h3>Beans Porridge</h3>
+                <p>A hearty dish cooked with spices, palm oil, and yam chunks.</p>
+                <p>&pound;50</p>
+               
+                <button 
+                class="add-to-cart" 
+                data-name="Beans Porridge" 
+                data-price="50" 
+                data-image="images/beans_porage.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/masa.jpeg" alt="Masa">
+                <h3>Masa</h3>
+                <p>Fluffy rice cakes popular in northern Nigeria.</p>
+                <p>&pound;25</p>
+                
+                <button 
+                class="add-to-cart" 
+                data-name="Masa" 
+                data-price="25" 
+                data-image="images/masa.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/okpa.jpeg" alt="Okpa">
+                <h3>Okpa</h3>
+                <p>Steamed Bambara nut pudding, a protein-packed delicacy.</p>
+                <p>&pound;25</p>
+                <button 
+                class="add-to-cart" 
+                data-name="Okpa" 
+                data-price="25" 
+                data-image="images/okpa.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/peppered_snail.jpeg" alt="Peppered Snail">
+                <h3>Peppered Snail</h3>
+                <p>Delicious snails cooked in a rich and spicy sauce.</p>
+                <p>&pound;40</p>
+                <button 
+                class="add-to-cart" 
+                data-name="Peppered Snail" 
+                data-price="40" 
+                data-image="images/peppered_snail.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/wara.jpeg" alt="Wara">
+                <h3>Wara</h3>
+                <p>Nigerian tofu made from soybeans or cow milk.</p>
+                <p>&pound;55</p>
+                <button 
+                class="add-to-cart" 
+                data-name="Wara" 
+                data-price="55" 
+                data-image="images/wara.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/efo_riro.jpeg" alt="Efo Riro">
+                <h3>Efo Riro</h3>
+                <p>A rich vegetable soup made with spinach and assorted meats.</p>
+                <p>&pound;60</p>
+                <button 
+                class="add-to-cart" 
+                data-name="Efo Riro" 
+                data-price="60" 
+                data-image="images/efo_riro.jpeg">
+                Add to cart
+            </button>
+            </div>
+            <div class="product">
+                <img src="images/palm_wine.jpeg" alt="Palm Wine">
+                <h3>Palm Wine</h3>
+                <p>Traditional Nigerian wine tapped from palm trees.</p>
+                <p>&pound;35</p>
+                <button 
+                class="add-to-cart" 
+                data-name="Palm wine" 
+                data-price="35" 
+                data-image="images/palm_wine.jpeg">
+                Add to cart
+            </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    // JavaScript for Adding to Cart
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const productElement = e.target.closest('.product');
+            const product = {
+                id: productElement.dataset.id,
+                name: productElement.dataset.name,
+                price: productElement.dataset.price
+            };
+
+            // Retrieve existing cart data
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Add new product
+            cart.push(product);
+
+            // Save updated cart back to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${product.name} added to cart!`);
+        });
+    });
+</script>
+<footer>
+<p>&copy; 2024 Deccena Eats. All Rights Reserved.</p>
+</footer>
+</body>
+</html>        

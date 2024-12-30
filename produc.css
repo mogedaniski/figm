@@ -1,0 +1,63 @@
+.marketplace-dashboard {
+    padding: 20px;
+    background: white;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #6a0dad;
+    color: white;
+    padding: 10px;
+}
+
+.dashboard-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.option {
+    background: #ff007f;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.carousel {
+    margin: 20px 0;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.categories {
+    margin: 20px 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    text-align: center;
+}
+
+.add-to-cart {
+    background: #6a0dad;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
